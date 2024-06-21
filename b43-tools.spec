@@ -1,4 +1,4 @@
-define __python /usr/bin/python2
+%define __python /usr/bin/python2
 %{!?python_sitelib: %define python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib()")}
 
 %define git_commit 8dc01d7b658dc04c5c500640854c6dba547a3118
