@@ -36,9 +36,9 @@ install -p -m 0644 ssb_sprom/COPYING COPYING.ssb_sprom
 %patch0 -p0 -b .optflags
 
 %build
-CFLAGS="%{optflags}" make %{?_smp_mflags} -C assembler
-CFLAGS="%{optflags}" make %{?_smp_mflags} -C disassembler
-CFLAGS="%{optflags}" make %{?_smp_mflags} -C ssb_sprom
+make %{?_smp_mflags} -C assembler
+make %{?_smp_mflags} -C disassembler
+make %{?_smp_mflags} -C ssb_sprom
 cd debug && python install.py build
 
 
