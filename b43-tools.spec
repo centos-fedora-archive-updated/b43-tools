@@ -15,8 +15,6 @@ Group:		System Environment/Base
 # ssb_sprom — GPLv2+
 License:	GPLv2 and GPLv2+ and GPLv3
 URL:		http://bu3sch.de/gitweb?p=b43-tools.git;a=summary
-# git clone http://git.bu3sch.de/git/b43-tools.git # cd b43-tools
-# git-archive --format=tar --prefix=%{name}-%{version}/ %{git_commit} | bzip2 > ../%{name}-%{version}.git%{git_commit_date}.tar.bz2
 Source0:	https://github.com/centos-fedora-archive-updated/b43-tools/releases/download/archive/b43-tools-0.git8dc01d7b658dc04c5c500640854c6dba547a3118.tar.bz2
 Patch0:		https://github.com/centos-fedora-archive-updated/b43-tools/raw/el6/b43-tools--use_optflags_in_ssb_sprom.diff
 BuildRoot:	%(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
